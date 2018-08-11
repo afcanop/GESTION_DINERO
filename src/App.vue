@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Manu Title="Gestión de dinero - AHORROS Y DEUDAS"/>
+    <Body/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Manu from './components/menu.vue'
+import Body from './components/body.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Body,
+    Manu
   }
 }
 </script>
@@ -23,6 +25,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+
 </style>
